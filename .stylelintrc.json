@@ -1,0 +1,18 @@
+{
+  "customSyntax": "post-scss",
+  "extends": [
+    "stylelint-config-rational-order",
+    "stylelint-prettier/recommended"
+  ],
+  "plugin": ["stylelint-scss", "stylelint-prettier"],
+  "rules": {
+    "prettier/prettier": true,
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["composes", "compose-with"],
+        "ignoreSelectors": [":export", "/^:import/"]
+      }
+    ]
+  }
+}
